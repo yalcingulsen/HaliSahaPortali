@@ -26,6 +26,10 @@ ASP.NET Core MVC, Entity Framework Core ve PostgreSQL ile geliştirilmiştir.
 
 &#x20;  dotnet user-secrets set "ConnectionStrings:DefaultConnection" "Host=localhost;Port=5432;Database=HaliSahaDb;Username=postgres;Password=SIFRENIZ"
 
+&#x20;  Admin hesabı (admin@halisaha.com) için şifreyi de user-secrets ile ayarlayın:
+
+&#x20;  dotnet user-secrets set "AdminSifre" "GucluBirSifre1!"
+
 3\. Proje araçlarını (dotnet-ef) kurun:
 
 &#x20;  dotnet tool restore

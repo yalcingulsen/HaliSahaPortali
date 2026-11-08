@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace HaliSahaPortali.Models
 {
@@ -17,5 +18,8 @@ namespace HaliSahaPortali.Models
 
         public int TesisId { get; set; }
         public Tesis? Tesis { get; set; }
+
+        public string KullaniciId { get; set; } = string.Empty;
+        public IdentityUser? Kullanici { get; set; }
     }
 }
