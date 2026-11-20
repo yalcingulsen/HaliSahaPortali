@@ -13,8 +13,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
 })
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<AppDbContext>();
+        .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddUserManager<KullaniciYoneticisi>();
 
 var app = builder.Build();
 
